@@ -11,6 +11,9 @@ import gift from "../../assets/images/vectors/gift.svg";
 import subscription from "../../assets/images/icon/subscription.png";
 import bill from "../../assets/images/icon/bill.png";
 import shield from "../../assets/images/icon/shield.png";
+import { creditScoresFaq } from "../../data";
+import Accordion from '../../components/accordion/Accordion';
+import Accordion2 from '../../components/accordion/Accordion2';
 
 const dashboardStats = {
   id: "1",
@@ -260,8 +263,8 @@ function Card({ data, cardNumber }) {
         return (
           <div
             data-aos="fade- up"
-            className={`w-full h-fit rounded-[18px] md:rounded-[24px] bg-white bg-opacity-40 pt-10 md:pt-[40px] pb-10 md:pb-[50px] px-6 md:px-[55px]   $ {styles.cardHover}`}
-          >
+            className={`w-full h-fit rounded-[18px] md:rounded-[24px] bg-whit e bg-gray-200 bg-opacity-40 pt-10 md:pt-[40px] pb-10 md:pb-[50px] px-6 md:px-[55px]   $ {styles.cardHover}`}
+          > 
             <h3 className="text-[22px] leading-[25px] font-bold">
               {data?.title}
             </h3>
@@ -315,7 +318,7 @@ function Card({ data, cardNumber }) {
         return (
           <div
             data-aos="fade- up"
-            className={`w-full h-fit rounded-[18px] md:rounded-[24px] bg-white bg-opacity-40 pt-10 md:pt-[40px] pb-10 md:pb-[30px] pl-6 md:pl-[55px] pr-4 md:pr-[35px] $ {styles.cardHover}`}
+            className={`w-full h-fit rounded-[18px] md:rounded-[24px] bg-whit e bg-gray-200 bg-opacity-40 pt-10 md:pt-[40px] pb-10 md:pb-[30px] pl-6 md:pl-[55px] pr-4 md:pr-[35px] $ {styles.cardHover}`}
           >
             <h3 className="text-[22px] leading-[25px] font-bold mb-5">
               Personal Information
@@ -670,7 +673,26 @@ function Card({ data, cardNumber }) {
             </div>
           </div>
         );
-      default:
+   
+        case 14:
+          return (
+            <div
+              data-aos="fade- up"
+              className={`w-full ld:w-[33% ] border-[2px] border-[#E2E4E7] overflow-hidden rounded-[6px] md:rounded-[6px] bg-white mt-12`}
+            > 
+              <div className="">
+                <div className="flex justify-center items-center w-[100%] h-[140px] py-4">
+                  <img src={gift} alt="gift" className="h-[100%]" />
+                </div>
+                <h3 className="text-[#000] text-[20px] leading-[16px] font-bold px-5 mb-4">
+                  Unerstanding your credit scores
+                </h3> 
+                <Accordion2 data={creditScoresFaq} /> 
+              </div>
+            </div>
+          );
+     
+        default:
         return null;
     }
   };

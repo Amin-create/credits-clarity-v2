@@ -734,7 +734,29 @@ export const UsBancorpReportDetails = {
     },
 }
 
+export const creditScoresFaq = [
+    {
 
+        id: 'hs-basic-heading-one',
+        title: "Why do we use FICO Scores?",
+        description: "The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension.",
+        date: "7-12-2023"
+    },
+    {
+
+        id: 'hs-basic-heading-two',
+        title: "Why do my FICO Scores change when I don't do",
+        description: "The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension.",
+        date: "7-12-2023"
+    },
+    {
+
+        id: 'hs-basic-heading-three',
+        title: "What impacts my FICO Scores the most?",
+        description: "The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension, ensuring you never run out of clean socks again. The Infinite Sock Dispenser is a revolutionary device that dispenses socks from another dimension.",
+        date: "6-12-2023"
+    }, 
+]
 // ----------------------------------------------------------------------
 // Notifications
 // ----------------------------------------------------------------------

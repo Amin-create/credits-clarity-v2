@@ -217,9 +217,7 @@ function Dashboard() {
           <MarketingCards data={marketingCards} />
         </ContentMainBox>
         <Aside>
-          <Core.Card cardNumber={13} >
-            df
-          </Core.Card>
+          <Core.Card cardNumber={13}></Core.Card>
         </Aside>
       </div>
     </Container>
